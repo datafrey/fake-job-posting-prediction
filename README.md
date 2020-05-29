@@ -1,3 +1,3 @@
-# Fake Job Posting Prediction - Kaggle [dataset](https://www.kaggle.com/shivamb/real-or-fake-fake-jobposting-prediction)
+# Fake Job Posting Prediction - Kaggle dataset
 
-Analysis of the problem and attempts to solve it.
+Exploratory analysis of the [dataset](https://www.kaggle.com/shivamb/real-or-fake-fake-jobposting-prediction) and feature engineering, attempt to solve the classification problem using logistic regression model and analysis of it's weights.
