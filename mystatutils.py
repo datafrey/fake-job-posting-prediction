@@ -79,8 +79,8 @@ def tconfint_diff(sample1, sample2, alpha=0.05):
     return left_boundary, right_boundary
 
 
-def bootstrap_confint(sample, stat=np.mean, n_samples=5000, alpha=0.05):
-    '''Confidence interval for a `stat` of a `sample` calculation
+def bootstrap_statint(sample, stat=np.mean, n_samples=5000, alpha=0.05):
+    '''Statistical interval for a `stat` of a `sample` calculation
     using bootstrap sampling mechanism. `stat` is a numpy function
     like np.mean, np.std, np.median, np.max, np.min, etc.'''
     indices = np.random.randint(0, len(sample), (n_samples, len(sample)))
@@ -91,8 +91,8 @@ def bootstrap_confint(sample, stat=np.mean, n_samples=5000, alpha=0.05):
     return boundaries
 
 
-def bootstrap_confint_diff(sample1, sample2, stat=np.mean, n_samples=5000, alpha=0.05):
-    '''Confidence interval for a difference in `stat` of two samples
+def bootstrap_statint_diff(sample1, sample2, stat=np.mean, n_samples=5000, alpha=0.05):
+    '''Statistical interval for a difference in `stat` of two samples
     calculation using bootstrap sampling mechanism. `stat` is a numpy
     function like np.mean, np.std, np.median, np.max, np.min, etc.'''
     indices1 = np.random.randint(0, len(sample1), (n_samples, len(sample1)))
